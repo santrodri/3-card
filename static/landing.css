@@ -1,0 +1,107 @@
+:root{
+    --orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+}
+
+@font-face {
+    font-family: title;
+    src: url(fonts/BigShouldersDisplay-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: body;
+    src: url(fonts/LexendDeca-VariableFont_wght.ttf);
+}
+
+
+*{
+    font-family: body; 
+    font-size: small;  
+}
+
+h1{
+    font-family: title;
+    font-size: xx-large
+}
+
+button{
+    height: 40px;
+    width: 100px;
+    border-radius: 10px;
+    background-color: white;
+    margin: 50px 0px !important;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+body{
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    color: white;
+}
+
+main{
+    margin: 20vh  0px;
+    grid-column: 2 / 11;
+}
+
+article{
+    display: flex;
+}
+
+article > *{
+    display: grid;
+    grid-template-columns: repeat(11,1fr);
+    row-gap: 5px;  
+    max-width: 330px;
+  
+}
+
+.primary > *,
+.second > *,
+.third > * {
+    margin-top: 20px;
+    grid-column: 2 / 11;
+}
+.primary{
+    border-radius: 10px 0px 0px 10px;
+    background-color: var(--orange);
+}
+.primary button:hover{
+    background-color: var(--orange) ;
+    color: white;
+    border: 2px solid white;
+}
+
+.primary button{
+    color: var(--orange);
+}
+
+
+.second{
+    background-color: var(--dark-cyan);
+}
+
+.second button{
+    color: var(--dark-cyan);
+}
+.second button:hover{
+    background-color: var(--dark-cyan) ;
+    color: white;
+    border: 2px solid white;
+}
+
+.third{
+    border-radius: 0px 10px 10px 0px;
+    background-color: var(--very-dark-cyan);
+}
+
+.third button{
+    color: var(--very-dark-cyan);
+}
+.third button:hover{
+    background-color: var(--very-dark-cyan) ;
+    color: white;
+    border: 2px solid white;
+}

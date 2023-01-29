@@ -1,0 +1,24 @@
+@media (max-width: 960px) {
+    article{
+        display: grid;
+        grid-row: auto;
+    }
+    article > *{
+        max-width: none;
+    }
+    main{
+        margin-top: 20px;
+    }
+
+   .primary{
+    border-radius: 10px 10px 0px 0px;
+    grid-row: 1 / 2
+   }
+   .second{
+    grid-row: 2 / 3
+   }
+   .third{
+    grid-row: 3 / 4;
+    border-radius: 0px 0px 10px 10px;
+   }
+}
